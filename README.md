@@ -2,27 +2,27 @@
 
 ## Overview
 
-This project is a **Beauty Shop Management System** developed using **Java** with a **relational SQL database**. The system is designed to manage the core operations of a beauty shop, including customers, employees, products, sales, carts, payments, and user registration.
+This project is a **Beauty Shop Management System** developed using **Java** and a **relational SQL database**. The system is designed to manage the main operations of a beauty shop, including customers, employees, products, sales, carts, payments, and user registration.
 
-The project combines:
+The project is uploaded to GitHub as:
 
-* **Application-level logic** implemented in Java (NetBeans project)
-* **Database design and implementation** using SQL
+* A **Java application packaged as a ZIP file** (NetBeans project)
+* A set of **SQL scripts** that define the database schema
 
-It was developed as a **course project** to demonstrate practical skills in **database modeling, SQL, and system integration**.
+This approach preserves the original project structure while keeping the repository organized and easy to understand.
 
 ---
 
 ## Problem Statement
 
-Beauty shops handle multiple daily operations such as:
+Managing a beauty shop involves handling multiple interconnected entities such as customers, employees, products, and transactions. Without a proper system, this data can become inconsistent and difficult to manage.
 
-* Managing customers and employees
-* Tracking products and services
-* Recording sales and payments
-* Handling shopping carts and transactions
+This project provides a structured solution by combining:
 
-Manually managing these operations can lead to errors and inefficiency. This project addresses the problem by providing a structured system backed by a relational database to ensure **data consistency, organization, and scalability**.
+* A Java-based application layer
+* A relational database backend
+
+to ensure **data consistency, organization, and efficient management** of shop operations.
 
 ---
 
@@ -31,41 +31,41 @@ Manually managing these operations can lead to errors and inefficiency. This pro
 The system supports the following core functionalities:
 
 * Customer registration and management
-* Employee and manager data management
+* Employee and manager management
 * Product catalog management
 * Shopping cart handling
-* Sales transaction recording
-* Payment processing
+* Sales and transaction recording
+* Payment management
 
-Each feature is mapped to a dedicated database table and integrated into the Java application.
+Each functionality is backed by a corresponding table in the database and integrated into the application logic.
 
 ---
 
 ## Database Design
 
-The database is designed using a **relational model**, where each major entity in the system is represented by a separate table.
+The database follows a **relational design**, where each major entity is represented by its own table.
 
 ### Main Tables
 
-* **Customer** – stores customer information
-* **Employee** – stores employee details
-* **Manager** – stores manager-specific data
-* **Products** – stores beauty shop products
-* **Cart** – manages customer shopping carts
-* **Sales** – records completed sales
-* **Payment** – stores payment details
-* **Register** – handles user registration data
+* **Customer** – customer information
+* **Employee** – employee details
+* **Manager** – manager records
+* **Products** – beauty shop products
+* **Cart** – shopping cart data
+* **Sales** – completed sales transactions
+* **Payment** – payment records
+* **Register** – user registration data
 
-Relationships between tables ensure data integrity and proper linkage between customers, orders, and payments.
+The SQL scripts are provided separately to clearly show the database structure and relationships.
 
 ---
 
 ## Technologies Used
 
 * **Java** – application logic
-* **SQL** – database schema and queries
+* **SQL** – database design and queries
 * **NetBeans IDE** – project development
-* **Ant** – project build configuration
+* **Ant** – build configuration
 
 ---
 
@@ -74,10 +74,7 @@ Relationships between tables ensure data integrity and proper linkage between cu
 ```
 beauty-shop-management-system/
 ├── app/
-│   ├── src/
-│   ├── test/
-│   ├── build.xml
-│   └── manifest.mf
+│   └── BEAUTYSHOP.zip
 │
 ├── database/
 │   ├── beauty_cart.sql
@@ -97,11 +94,12 @@ beauty-shop-management-system/
 
 ## How to Run
 
-1. Import the project into **NetBeans IDE**.
-2. Create a database using your preferred SQL server (e.g., MySQL).
-3. Execute the SQL scripts inside the `database/` folder to create tables.
-4. Update database connection settings in the Java source code if required.
-5. Build and run the project using NetBeans or Ant.
+1. Download and extract `BEAUTYSHOP.zip`.
+2. Open the extracted project in **NetBeans IDE**.
+3. Create a database using your preferred SQL server (e.g., MySQL).
+4. Execute the SQL scripts in the `database/` folder to create the required tables.
+5. Update database connection settings in the Java project if needed.
+6. Build and run the project from NetBeans.
 
 ---
 
@@ -112,13 +110,13 @@ Through this project, the following skills were developed:
 * Designing relational databases from system requirements
 * Writing SQL scripts for real-world entities
 * Integrating Java applications with databases
-* Organizing and managing medium-scale software projects
+* Organizing and managing a medium-scale software project
 
 ---
 
 ## Future Improvements
 
+* Unzip and restructure the application source code directly in the repository
 * Add a graphical user interface (GUI)
-* Improve input validation and error handling
-* Add reporting and analytics features
-* Deploy the system using a web-based architecture
+* Improve validation and error handling
+* Extend the system with reporting and analytics features
